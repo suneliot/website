@@ -1,3 +1,35 @@
+* {
+margin: 0 auto;
+padding: 0;
+}
+
 body {
-background: black;
+background: #eee;
+font-family: "Museo 300","Helvetica Neue (TT)","Helvetica Neue", Helvetica, Arial, san-serif; 
+font-size:15px;
+}
+
+#content {
+	margin-top: 240px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 900px;
+}
+
+.header h1{
+font-size: 80px;
+color: #000;
+font-family: helvetica, arial, san-serif;
+text-align: center;
+text-shadow: 2px 2px 5px #999;
+}
+
+.header h2{
+font-size: 18px;
+color: #000;
+font-family: helvetica, arial, san-serif;
+text-align: center;
+width: 600px;
+margin-top:40px;
 }
