@@ -4,32 +4,55 @@ padding: 0;
 }
 
 body {
-background: #eee;
-font-family: "Museo 300","Helvetica Neue (TT)","Helvetica Neue", Helvetica, Arial, san-serif; 
-font-size:15px;
+font-family: "Helvetica Neue (TT)", "Helvetica Neue", Helvetica, arial, san-serif;
+overflow: hidden;
 }
 
-#content {
-	margin-top: 240px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	width: 900px;
+#background {
+position: absolute;
 }
 
-.header h1{
+
+#header {
+width: 600px;
+padding: 10px;
+-webkit-box-shadow: 0 1px 2px #999;
+-moz-box-shadow: 0 1px 2px #999;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+background: #eee repeat;
+z-index: 100;
+position: fixed;
+bottom: 180px;
+right: 70px;
+}
+
+#header h1 {
 font-size: 80px;
 color: #000;
-font-family: helvetica, arial, san-serif;
 text-align: center;
 text-shadow: 2px 2px 5px #999;
 }
 
-.header h2{
-font-size: 18px;
-color: #000;
-font-family: helvetica, arial, san-serif;
-text-align: center;
+#text {
 width: 600px;
-margin-top:40px;
+padding: 10px;
+-webkit-box-shadow: 0 1px 2px #999;
+-moz-box-shadow: 0 1px 2px #999;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+background: #eee repeat;
+z-index: 100;
+position: fixed;
+bottom: 50px;
+right: 70px;
 }
+
+#text h2{
+font-size: 24px;
+color: #000;
+text-align: center;
+}
+

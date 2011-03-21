@@ -7,7 +7,10 @@
 	<meta name="keywords" content="Eliot Sun, suneliot">
     
 	<link href="stylesheets/styling.css" media="screen" rel="stylesheet" type="text/css" />
-        
+	
+    <script src="javascripts/jquery-1.5.min.js"></script>
+
+
     <script type="text/javascript">
 	/* GOOGLE ANALYTICS */
   var _gaq = _gaq || [];
@@ -20,20 +23,77 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 	</script>
-    
+
+
     
   </head>
+
+
   
   <body>
-  	<div id="content">
-  		<div class="header">
-			<h1>Coming Soon</h1>
-			<h2>Eliot's been etching out some cool stuff on his stone tablets and will put them right here as soon as he deems them worthy!</h2>
+  
 
+  		<div id="header">
+				<h1>Coming Soon</h1>
+		</div>
+		
+		<div id="text">
+				<h2>Eliot's been etching out some cool stuff on his stone tablets and will put them right here as soon as they're beautiful enough!</h2>
 		</div>
 		
 
+		
+  	<div id="background" align="center">
+  		<img id="background_image" src="images/bg2.png" alt=""/>
+  	</div>
   
-	</div>
-  </body>
+	
+  <script type="text/javascript"> 
+ 
+        //Set the background image to resize to the window in a decent fashion.
+        $(document).ready(function() {
+                var $winheight = $(window).height();
+                var $winwidth = $(window).width();
+                if($winwidth > $winheight * 1.5){
+                    //resize on width if stretched too much
+                    $("img#background_image").attr({
+                        width: $winwidth,
+                         height: $winwidth / 1.5
+                    });
+                }else{
+                    if($winheight > $winwidth / 1.5){
+                        //set on height if too small
+                        $("img#background_image").attr({
+                                height: $winheight,
+                                width: $winheight * 1.5
+                        });
+                    } 
+                }
+                $(window).bind("resize", function(){
+                        var $winheight = $(window).height();
+                        var $winwidth = $(window).width();           
+                        if($winwidth > $winheight * 1.5){
+                            //resize on width if stretched too much
+                            $("img#background_image").attr({
+                                width: $winwidth,
+                                 height: $winwidth / 1.5
+                            });
+                        }else{
+                            if($winheight > $winwidth / 1.5){
+                                //set on height
+                                $("img#background_image").attr({
+                                        height: $winheight,
+                                        width: $winheight * 1.5
+                                });
+                            } 
+                        }                     
+ 
+                 });
+        });
+        
+ 
+	</script>	
+	
+  </body>  
+  
 </html>
