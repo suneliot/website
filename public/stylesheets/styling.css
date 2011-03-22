@@ -59,7 +59,7 @@ padding-top: 30px;
 	opacity: .5;
 }
 
-#nav li:active{
+#nav li.active{
 	opacity: .5;
 }
 
