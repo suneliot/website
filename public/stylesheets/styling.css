@@ -8,51 +8,135 @@ font-family: "Helvetica Neue (TT)", "Helvetica Neue", Helvetica, arial, san-seri
 overflow: hidden;
 }
 
+a:link, a:visited {
+color: #000;
+text-decoration: none;
+}
+
 #background {
 position: absolute;
 }
 
 
 #header {
-width: 600px;
+position: fixed;
+width: 650px;
 padding: 10px;
 -webkit-box-shadow: 0 1px 2px #999;
 -moz-box-shadow: 0 1px 2px #999;
--webkit-border-radius: 8px;
--moz-border-radius: 8px;
-border-radius: 8px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
 background: #eee repeat;
 z-index: 100;
-position: fixed;
-bottom: 180px;
+bottom: 580px;
 right: 70px;
 }
 
 #header h1 {
-font-size: 80px;
+font-size: 48px;
 color: #000;
 text-align: center;
 text-shadow: 2px 2px 5px #999;
+display: inline;
+padding-left: 10px;
 }
 
-#text {
-width: 600px;
+#nav {
+float: right;
+padding-top: 30px;
+}
+
+#nav li{
+	display: inline;
+	padding-right: 20px;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Helvetiva Neue", Helvetiva, Arial, sans-serif;
+}
+
+#nav li:hover{
+	opacity: .5;
+}
+
+#nav li:active{
+	opacity: .5;
+}
+
+#content {
+width: 650px;
+height: 500px;
 padding: 10px;
+padding-top: 20px;
 -webkit-box-shadow: 0 1px 2px #999;
 -moz-box-shadow: 0 1px 2px #999;
--webkit-border-radius: 8px;
--moz-border-radius: 8px;
-border-radius: 8px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
 background: #eee repeat;
 z-index: 100;
 position: fixed;
-bottom: 50px;
+bottom: 30px;
 right: 70px;
 }
 
-#text h2{
+#content li {
+display: inline;
+}
+
+#content h2 {
+font-size: 36px;
+color: #000;
+text-align: left;
+margin-left: 10px;
+}
+
+#content h4 {
 font-size: 24px;
 color: #000;
-text-align: center;
+text-align: left;
+margin-left: 35px;
+}
+
+#content p {
+font-size: 14px;
+color: #000;
+text-align: left;
+margin-bottom: 20px;
+margin-left: 35px;
+margin-right: 30px;
+}
+
+#last_line p {
+font-size: 14px;
+color: #000;
+text-align: left;
+margin-bottom: 5px;
+margin-left: 35px;
+margin-right: 30px;
+}
+
+#contact {
+margin-left: 35px;
+}
+
+#contact a {
+padding-right: 5px;
+}
+
+#contact a:hover {
+opacity: .5;
+}
+
+#footer {
+position: fixed;
+bottom: 40px;
+z-index: 120;
+}
+
+#footer h1 {
+font-size: 12px;
+margin-left: 215px;
+opacity: .4;
 }
 
