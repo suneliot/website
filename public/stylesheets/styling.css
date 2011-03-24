@@ -1,123 +1,178 @@
-* {
-margin: 0 auto;
-padding: 0;
+body {
+	font-family: 'Ubuntu', arial, serif;
+	margin: 0;
+	padding: 0;
+	background: url(../images/bg.png);
 }
 
-body {
-font-family: "Helvetica Neue (TT)", "Helvetica Neue", Helvetica, arial, san-serif;
-overflow: hidden;
+li:hover{
+	opacity: .5;
+}
+
+li.active{
+	opacity: .5;
 }
 
 a:link, a:visited {
-color: #000;
+color: #a2a2a2;
 text-decoration: none;
 }
 
-#background {
-position: absolute;
+.clearb {
+	clear: both;
 }
 
 
-#header {
-position: fixed;
-width: 650px;
-padding: 10px;
--webkit-box-shadow: 0 1px 2px #999;
--moz-box-shadow: 0 1px 2px #999;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
-background: #eee repeat;
-z-index: 100;
-bottom: 580px;
-right: 70px;
+
+/* MAIN STYLES */
+
+.container {
+	width: 1200px;
+	margin: auto;
 }
 
-#header h1 {
-font-size: 48px;
-color: #000;
-text-align: center;
-text-shadow: 2px 2px 5px #999;
-display: inline;
-padding-left: 10px;
+#top {
+	background: url(../images/bg3.png) no-repeat 10%;
+	font-size: 1.1em;
+	width: 555px;
+	height: 220px;
+	padding: 60px 0 0 190px;
+	float: left;
+	margin-left: 100px;
 }
+
+#top img {
+	margin-bottom: 5px;
+}
+
+#top p {
+padding-top: 100px;
+padding-left: 260px;
+float: left;
+font-size: 65px;
+font-weight: bold;
+color: white;
+}
+
+
+/* NAVIGATION BAR */
 
 #nav {
-float: right;
-padding-top: 30px;
+	float: left;
+	width: 150px;
+	margin: 0;
+	padding-top: 5px;
+	padding-left: 10px;
 }
 
-#nav li{
-	display: inline;
-	padding-right: 20px;
-	text-align: center;
-	font-size: 18px;
-	font-family: "Helvetiva Neue", Helvetiva, Arial, sans-serif;
+#nav a, #nav li {
+	display: block;
+	float: left;
+	font-size: 32px;
 }
 
-#nav li:hover{
-	opacity: .5;
-}
 
-#nav li.active{
-	opacity: .5;
-}
+
+/* MAIN CONTENT */
 
 #content {
-width: 650px;
-height: 500px;
-padding: 10px;
-padding-top: 20px;
--webkit-box-shadow: 0 1px 2px #999;
--moz-box-shadow: 0 1px 2px #999;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
-background: #eee repeat;
-z-index: 100;
-position: fixed;
-bottom: 30px;
-right: 70px;
+	clear: both;
+	float: left;
+	width: 635px;
+	height: 500px;
+	padding: 20px 30px 20px 80px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	background: #eee repeat;
+	margin-left: 100px;
+	margin-bottom: -20px;
+	margin-top: -39px;
 }
 
-#content li {
-display: inline;
+
+
+/* SIDE BAR */
+
+#sidebar {
+	color: #8d8974;
+	float: left;
+	width: 215px;
+	padding-top: 0px;
+	margin: 0;
 }
 
-#content h2 {
-font-size: 36px;
-color: #000;
-text-align: left;
-margin-left: 10px;
+.sidebar_pad {
+	padding-left: 20px;
 }
 
-#content h4 {
-font-size: 24px;
-color: #000;
-text-align: left;
-margin-left: 10px;
+#photos {
+	margin-top: -45px;
+	padding-left: 10px;
 }
 
-#content p {
-font-size: 14px;
-color: #000;
-text-align: left;
-margin-bottom: 15px;
-margin-left: 35px;
-margin-right: 30px;
+#photos li {
+	font-size: 32px;
+	color: #d68f35;
+	margin-bottom: -10px;
+	padding-bottom: 15px;
+	display: block;
+
 }
 
-#last_line p {
-font-size: 14px;
-color: #000;
-text-align: left;
-margin-bottom: 5px;
-margin-left: 35px;
-margin-right: 30px;
+#twitter {
+	padding-left: 10px;
 }
 
-#contact {
-margin-left: 35px;
+#twitter li {
+	font-size: 32px;
+	color: #d68f35;
+	margin-top: 20px;
+	margin-bottom: -15px;
+	padding-bottom: 0px;
+	display: block;
+}
+
+#tweet li {
+	font-size: 12px;
+	padding-bottom: 15px;
+}
+
+#tweet li:hover {
+	opacity: 1;
+}
+
+
+/* FOOTER */
+
+#footer {
+	clear: both;
+	padding-right: 30px;
+	margin-top: 0px;
+	width: 715px;
+	height: 40px;
+	text-align: right;
+	float: left;
+	margin-left: 100px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	background: #eee repeat;
+}
+#footer div {
+	padding-bottom: 20px;
+}
+#footer div a {
+	color: #4b3f26;
+	text-decoration: underline;
+	padding-left: 5px;
+}
+#footer div a:hover {
+	text-decoration: none;
+}
+#foot_top {
+	float: left;
+	margin: 90px 0 0 20px;
 }
 
 #contact a {
@@ -128,15 +183,40 @@ padding-right: 5px;
 opacity: .5;
 }
 
-#footer {
-position: fixed;
-bottom: 40px;
-z-index: 120;
+
+
+/* STYLING */
+
+h2, h3, h4 {
+	font-family: 'Ubuntu';
+	font-weight: normal;
+	color: #d68f35;
+	line-height: normal;
+	letter-spacing: -1px;
+}
+h2 {
+	font: normal 'Ubuntu';
+	font-size: 24px;
+	color: #d68f35;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	height: 38px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 26px;
+	line-height: 1em;
+	margin: 0 0 .2em 0;
+}
+h4 {
+	font: bold 16px 'Ubuntu';
+	margin-bottom: 8px;
 }
 
-#footer h1 {
-font-size: 12px;
-margin-left: 215px;
-opacity: .4;
+p {
+	padding: 0;
+	margin-right: 15px;
+	margin-bottom: 1.6em;
 }
+
 
