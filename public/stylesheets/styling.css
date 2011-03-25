@@ -304,3 +304,33 @@ ol {
 padding-top: 30px;
 margin-bottom: -30px;
 }
+
+
+
+/*** PROJECTS 
+
+.projects {
+	margin-bottom: 1em;
+	padding: 1em;
+	text-shadow: #fff 0px -1px 0;
+	background-color: #ffffff;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.project_image {
+	float: left;
+	margin-right: 1em;
+	width: 80%;
+}
+
+.project-image {
+	background: #ffffff;
+	padding: 5px;
+	border: 1px solid #e5e0da;
+	float: left;
+	margin-right: 1em;
+	width: 70%;
+}
+***/
