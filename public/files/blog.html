@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head>
+        <title>{Title}</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        	{block:Description}
+            	<meta name="description" content="{MetaDescription}" />
+        	{/block:Description}
+	<link href="http://eliotsun.com/stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:regular' rel='stylesheet' type='text/css' />
+
+    <script src="http://eliotsun.com/javascripts/jquery-1.5.min.js"></script>
+<script 
+  src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"
+  type="text/javascript">
+</script>
+
+		<meta name="description" content="gdgt geek. startups. cameras. bicycles. cool stuff. making peoples' lives more...interesting. works best in pajamas.">
+		<meta name="keywords" content="Eliot Sun, suneliot, startups, entrepreneurship, tech, technology, gadgets, bicycles, sports, UC Berkeley, San Francisco, Bay Area, Silicon Valley">
+		<meta property="og:title" content="{block:PostTitle}{PostTitle}{/block:PostTitle}"/>
+		<meta property="og:site_name" content="blog.eliotsun.com"/>
+
+<style type="text/css">
+
+body {
+	font-family: 'Ubuntu', arial, serif;
+	margin: 0;
+	padding: 0;
+	background: url(http://eliotsun.com/images/bg.png);
+}
+
+li:hover{
+	opacity: .5;
+}
+
+li.active{
+	opacity: .5;
+}
+
+a:link, a:visited {
+color: #a2a2a2;
+text-decoration: none;
+}
+
+.clearb {
+	clear: both;
+}
+
+
+
+/* MAIN STYLES */
+
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
+#top {
+	background: url(http://eliotsun.com/images/bg4.png) no-repeat 100%;
+	font-size: 1.1em;
+	width: 555px;
+	height: 240px;
+	padding: 60px 0 0 190px;
+	float: left;
+	margin-left: 60px;
+}
+
+#top img {
+	margin-bottom: 5px;
+}
+
+#top a {
+padding-top: 103px;
+float: left;
+font-size: 90px;
+font-weight: bold;
+color: #eee;
+display:inline;
+}
+
+.eliotsun {
+margin-top: 20px;
+padding-left: 190px;
+}
+
+
+/*** NAVIGATION BAR ***/
+
+#nav {
+	float: left;
+	width: 300px;
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-left: -283px;
+	display: inline;
+}
+
+#nav a, #nav li {
+	display: inline;
+	padding-right: 6px;
+	float: left;
+	font-size: 18px;
+	color: white;
+}
+
+
+
+/*** MAIN CONTENT ***/
+
+#content {
+	clear: both;
+	float: left;
+	width: 635px;
+	height: 480px;
+	padding: 20px 30px 20px 80px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	background: #eee repeat;
+	margin-left: 60px;
+	margin-bottom: -20px;
+	margin-top: -39px;
+	overflow-y: auto;
+}
+
+#content li:hover {
+	opacity: 1;
+}
+
+/*** SIDE BAR ***/
+
+#sidebar {
+	color: #8d8974;
+	float: left;
+	width: 250px;
+	padding-top: 0px;
+	margin: 0;
+	margin-top: -305px;
+}
+
+#photos {
+	margin-top: -45px;
+	padding-left: 20px;
+}
+
+#photos li {
+	font-size: 32px;
+	color: #d68f35;
+	margin-bottom: -5px;
+	padding-bottom: 15px;
+	display: block;
+
+}
+
+#twitter {
+	padding-left: 20px;
+}
+
+#twitter li {
+	font-size: 32px;
+	color: #8d8974;
+	margin-top: 20px;
+	margin-bottom: -25px;
+	padding-bottom: 0px;
+	display: block;
+}
+
+#tweet {
+	margin-top: 30px;
+	margin-left: -30px;
+}
+
+#tweet li {
+	font-size: 12px;
+	padding-bottom: 15px;
+}
+
+#tweet li:hover {
+	opacity: 1;
+}
+
+
+/*** FOOTER ***/
+
+#footer {
+	clear: both;
+	padding-right: 30px;
+	margin-top: 0px;
+	width: 715px;
+	height: 25px;
+	text-align: right;
+	float: left;
+	margin-left: 60px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	background: #eee repeat;
+}
+
+#contact a {
+padding-right: 5px;
+padding-bottom: -20px;
+}
+
+#contact a:hover {
+opacity: .5;
+}
+
+
+
+/* STYLING */
+h1 {
+	font-family: 'Ubuntu';
+	font-size: 12px;
+	opacity: .6;
+}
+
+
+h2, h3, h4 {
+	font-family: 'Ubuntu';
+	font-weight: normal;
+	color: #d68f35;
+	line-height: normal;
+	letter-spacing: -1px;
+}
+h2 {
+	font: normal 'Ubuntu';
+	font-size: 24px;
+	color: #d68f35;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	height: 38px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 26px;
+	line-height: 1em;
+	margin: 0 0 .2em 0;
+}
+h4 {
+	font: bold 16px 'Ubuntu';
+	margin-bottom: 8px;
+}
+
+h5{
+	font-family: 'Ubuntu';
+	font-weight: bolder;
+	color: #d68f35;
+}
+
+p {
+	padding: 0;
+	margin-right: 15px;
+	margin-bottom: 1.6em;
+}
+
+
+
+/* BLOG STYLING */
+
+.previous {
+float: right;
+padding-right: 15px;
+}
+
+.previous a:hover {
+	opacity: .5;
+}
+
+.next {
+float: right;
+}
+
+.next a:hover {
+	opacity: .5;
+}
+
+.date {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+#quote {
+	font-style: italic;
+}
+
+#link a:hover {
+	opacity: .5;
+}
+
+.caption {
+margin-top: 10px;
+}
+
+#footer a {
+float: left;
+margin-left: 30px;
+}
+
+
+
+/*** BLOG ENTRIES ***/
+
+ul, ol {
+	margin: 0 0 1.5em 30px;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+
+.sidebar_list1 {
+	list-style: none;
+	margin: 0 0 30px 0;
+	padding: 0;
+}
+.sidebar_list1 a:link, .sidebar_list1 a:active, .sidebar_list1 a:visited {
+	color: #8d8974;
+	border-bottom: 1px solid #212121;
+	display: block;
+	width: 200px;
+	padding: 5px 0;
+}
+.sidebar_list1 a:hover {
+	color: #eeeeee;
+	text-decoration: none;
+	background-color: #212121;
+}
+
+#blog_title li {
+	font-size: 32px;
+	color: #d68f35;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+	display: block;
+}
+
+.sidebar_pad {
+	padding-bottom: 30px;
+	padding-left: 20px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div class="container">
+
+	<div id="top">
+		<div class="eliotsun">
+		<a href="http://eliotsun.com">.eliot</a><a href="http://eliotsun.com"><h5>sun</h5></a>
+		</div>
+	</div>
+
+
+	<ul id="nav">
+		<li><a href="http://eliotsun.com/about">.about</a></li>
+		<li><a href="http://eliotsun.com/work">.projects</a></li>
+		<li><a href="http://eliotsun.com/photos">.photos</a></li>		
+		<li><a href="http://blog.eliotsun.com/"><h5>.blog</h5></a></li>
+	</ul>
+
+	<div class="clearb"></div>
+			
+	<div id="content">
+
+	<ol id="posts">
+		{block:Posts}
+		
+			<div class="next">
+            	{block:NextPage}
+                	<a href="{NextPage}">next &#187;</a>
+            	{/block:NextPage}
+			</div>
+			
+			<div class="previous">
+            	{block:PreviousPage}
+					<a href="{PreviousPage}">&#171; previous</a>
+				{/block:PreviousPage}
+			</div>
+
+<a href="http://www.tumblr.com/register/follow/suneliot" target="_top" id="follow link"><img id="follow_image" alt="Follow suneliot" style="width:58px;" src="http://assets.tumblr.com/images/iframe_follow_alpha.png"></a>
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="{Permalink}" data-text="{block:Title}{Title}{/block:Title}" data-count="horizontal" data-via="suneliot">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+<iframe src="http://www.facebook.com/plugins/like.php?href={Permalink}&amp;layout=standard&amp;show_faces=true&amp;width=600&amp;action=like&amp;font=helvetica&amp;colorscheme=evil" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:600px; height:24px"></iframe>
+
+
+				<div class="date">
+						{block:NewDayDate}
+                         <a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year} at {12Hour}:{Minutes}{CapitalAmPm}</a>
+                       {/block:NewDayDate}
+
+                        {block:SameDayDate}
+                          <a href="{Permalink}"> {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year} at {12Hour}:{Minutes}{CapitalAmPm} </span></a>
+                        {/block:SameDayDate}
+				</div>
+				
+				
+				<div id="text">
+                {block:Text}
+                    <li class="post text">
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+
+                        {Body}
+                    </li>
+                {/block:Text}
+                </div>
+                
+
+                <div id="photo">
+                {block:Photo}
+                    <li class="post photo">
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Photo}
+                </div>
+                
+                <div id="photoset">
+                {block:Photoset}
+                    <li class="post photoset">
+                        {Photoset-500}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Photoset}
+				</div>
+				
+				<div id="quote">
+                {block:Quote}
+                    <li class="post quote">
+                        "{Quote}"
+
+                        {block:Source}
+                            <div class="source">{Source}</div>
+                        {/block:Source}
+                    </li>
+                {/block:Quote}
+                </div>
+                
+                <div id="link">
+                {block:Link}
+                    <li class="post link">
+                        <a href="{URL}" class="link" {Target}>{Name}</a>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+                    </li>
+                {/block:Link}
+                </div>
+                
+                <div id="chat">
+                {block:Chat}
+                    <li class="post chat">
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}
+
+                                    {Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </li>
+                {/block:Chat}
+				</div>
+				
+				<div id="video">
+                {block:Video}
+                    <li class="post video">
+                        {Video-500}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Video}
+				</div>
+				
+				<div id="audio">
+                {block:Audio}
+                    <li class="post audio">
+                        {AudioPlayerBlack}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Audio}
+                </div>
+                
+            {/block:Posts}
+        </ol>
+
+	</div>
+		
+	<div id="sidebar">
+	
+	
+		<div class="sidebar_pad">
+			<div id="blog_title">
+			<li><a href="http://blog.eliotsun.com"><h5>.blog</h5></a></li>
+			</div>
+			<ul class="sidebar_list1">
+				<li><a href='http://blog.eliotsun.com/page/1'>mechanical jellyfish floating through the air</a></li> 
+				<li><a href='http://blog.eliotsun.com/page/2'>The 6 Crappiest Interview Questions</a></li> 
+				<li><a href='http://blog.eliotsun.com/page/3'>the valley dream dinner</a></li> 
+				<li><a href='http://blog.eliotsun.com/page/4'>global android activation visualization</a></li> 
+				<li><a href='http://blog.eliotsun.com/page/5'>its good to be in the Valley</a></li> 
+			</ul>
+		</div>
+	
+		<div id="photos">
+			<li><a href="/photos/">.photos</a></li>
+			<div id="picasa">
+			<a href="/photos/"><img src="https://lh3.googleusercontent.com/_LXZpAhrzEdo/TCgUkivcLaI/AAAAAAAAArA/z83UBJAD3fI/s288/Tokyo%20airport%20walkway.jpg" height="182" width="250" /></a>
+			</div>
+		</div>
+		
+		<div id="twitter">
+			<li><a href="http://www.twitter.com/suneliot">.tweets</a></li>
+			<div id="tweet">
+ 				<p>Please wait while my tweets load <img src="http://eliotsun.com/images/ajax-loader.gif"/></p>
+ 				<p><a href="http://twitter.com/suneliot">If you can't wait - check out what I've been twittering</a></p>
+			</div>
+		</div>
+	</div>
+			
+	<div class="clearb"></div>
+
+
+	<div id="footer">
+		<a href="/archive">Archive</a>
+		<h1>&copy; 2011 eliot sun. all that stuff up there.</h1>
+
+	</div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+getTwitters('tweet', { 
+  id: 'suneliot', 
+  count: 4, 
+  enableLinks: true, 
+  ignoreReplies: true, 
+  clearContents: true,
+  template: '"%text%" <div>Tweeted on <a href="http://twitter.com/%user_screen_name%">%time%</a>'
+});
+</script>
+
+</body>
+
+</html>
