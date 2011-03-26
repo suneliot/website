@@ -307,34 +307,24 @@ margin-bottom: -30px;
 
 
 
-/*** PROJECTS 
+/*** PROJECTS ***/
 
-.projects {
-	margin-bottom: 1em;
-	padding: 1em;
-	text-shadow: #fff 0px -1px 0;
-	background-color: #ffffff;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
+.project_title{
+	margin-top: 30px;
+	margin-bottom: 5px;
 }
 
 .project_image {
 	float: left;
-	margin-right: 1em;
-	width: 80%;
-}
-
-.project-image {
-	background: #ffffff;
 	padding: 5px;
-	border: 1px solid #e5e0da;
-	float: left;
-	margin-right: 1em;
-	width: 70%;
+	background: #212121;
+	border: 3px solid #212121;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 }
-***/
 
-.projects p {
-	margin-top: 20px;
+.project_description {
+	float: left;
+	margin-top: 5px;
 }
