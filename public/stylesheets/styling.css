@@ -102,7 +102,9 @@ padding-left: 190px;
 	overflow-y: auto;
 }
 
-
+#content p {
+	font-size: 16px;
+}
 
 /*** SIDE BAR ***/
 
@@ -149,7 +151,7 @@ padding-left: 190px;
 }
 
 #tweet li {
-	font-size: 12px;
+	font-size: 13px;
 	padding-bottom: 15px;
 }
 
