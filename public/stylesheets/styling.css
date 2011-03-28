@@ -164,9 +164,10 @@ padding-left: 190px;
 #footer {
 	clear: both;
 	padding-right: 30px;
+	padding-top: 20px;
 	margin-top: 0px;
 	width: 715px;
-	height: 25px;
+	height: 60px;
 	text-align: right;
 	float: left;
 	margin-left: 60px;
@@ -266,6 +267,10 @@ ul {
 }
 ol {
 	list-style: decimal;
+}
+
+.sidebar_list1 a {
+	font-size: 14px;
 }
 
 .sidebar_list1 {
